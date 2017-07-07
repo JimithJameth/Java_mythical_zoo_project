@@ -11,7 +11,7 @@ public class FantasyZoo {
 public FantasyZoo(String name){
   this.name = name;
   this.animal = new ArrayList<Animals>();
-  this.enclosure = new ArrayList<Enclosures();
+  this.enclosure = new ArrayList<Enclosures>();
 }
 
 public String getName(){
