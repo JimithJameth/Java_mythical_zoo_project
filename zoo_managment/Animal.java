@@ -1,24 +1,24 @@
 package zoo_management;
 
-public abstract class Animals{
+public abstract class Animal{
 
   String name;
-  int numberoflegs;
+  int numberOfLegs;
   int age;
   String type;
-  int levelofdanger;
+  int levelOfDanger;
   String sleep;
-  int foodlevel;
+  int foodLevel;
 
 
-  public Animals (String name, int numberoflegs, int age, String type, int levelofdanger,String sleep, int foodlevel){
+  public Animals (String name, int numberOfLegs, int age, String type, int levelOfDanger,String sleep, int foodLevel){
 
     this.name = name;
-    this.numberoflegs = numberoflegs;
+    this.numberOfLegs = numberOfLegs;
     this.age = age;
     this.type = type;
-    this.levelofdanger = levelofdanger;
-    this.foodlevel = foodlevel;
+    this.levelOfDanger = levelOfDanger;
+    this.foodLevel = foodLevel;
     this.sleep = sleep;
   }
 
@@ -27,7 +27,7 @@ public abstract class Animals{
   }
 
   public int getNumberOfLegs(){
-    return this.numberoflegs;
+    return this.numberOfLegs;
   }
 
   public int getAge(){
@@ -39,10 +39,10 @@ public abstract class Animals{
   }
 
   public int getLevelOfDanger(){
-    return this.levelofdanger;
+    return this.levelOfDanger;
   }
 
   public int getFoodLevel(){
-    return this.foodlevel;
+    return this.foodLevel;
   }
 }
