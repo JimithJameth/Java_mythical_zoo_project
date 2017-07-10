@@ -19,7 +19,8 @@ public class Dragon extends Animal implements Flyable {
     return "The Dragon flaps its wings and begins to rise from the land bellow";
   }
 
-  public void feedAnimal(){
+  public String feedAnimal(){
     this.foodLevel += 1;
+    return "The dragon feeds and gains a food level!";
   }
 }

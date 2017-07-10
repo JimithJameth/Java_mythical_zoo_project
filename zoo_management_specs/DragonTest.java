@@ -42,7 +42,12 @@ public class DragonTest {
 
   @Test
    public void feedAnimal(){
+    assertEquals("The dragon feeds and gains a food level!",dragon.feedAnimal());
+   }
+
+  @Test
+    public void foodLevelIncrease(){
     dragon.feedAnimal();
     assertEquals(8,dragon.getFoodLevel());
-   }
+    }
 }
