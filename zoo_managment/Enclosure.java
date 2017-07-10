@@ -1,42 +1,36 @@
-package fantasy_zoo;
+package zoo_managment;
+
 import behaviours.*;
 import java.util.ArrayList;
 
-abstract class Enclosure {
+public class Enclosure {
 
   private String name;
-  private ArrayList<Animal> animal;
+  private ArrayList<Animal> animals;
   private TerrainType terrainType;
-  public enum TerrainType {
-    DESERTLAND,
-    AQUATICLAND,
-    BRIMSTONELAND,
-    WINDSTORMLAND
+
+  public Enclosure(TerrainType terrain){
+    this.terrainType = terrain;
+    this.animals = new ArrayList<Animal>();
   }
 
-  private Land(TerrainType,terrain){
-    this.terrain = terrain;
-    this.collection = new ArrayList<Animal>();
+  public TerrainType getTerrain(){
+   return this.terrainType;
   }
 
-  private TerrainType getTerrain(){
-    return this.terrain;
-
-    }
-
-  private String getName(){
+  public String getName(){
     return this.name;
   }
 
-  private void addAnimal(Animal beast){
-    this.collection.add(beast);
+  public void addAnimal(Animal beast){
+    this.animals.add(beast);
   }
 
-  private void removeAnimal(Animal beast){
-    this.collecton.remove(beast)
+  public void removeAnimal(Animal beast){
+    this.animals.remove(beast);
   }
 
-  private int collectionCount(){
-    return collection.size();
+  public int collectionCount(){
+    return animals.size();
   }
 }

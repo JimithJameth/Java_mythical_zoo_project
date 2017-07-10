@@ -1,4 +1,4 @@
-package zoo_management;
+package zoo_managment;
 
 public abstract class Animal{
 
@@ -12,8 +12,7 @@ public abstract class Animal{
   Double sellable;
 
 
-  public Animals (String name, int numberOfLegs, int age, String type, int levelOfDanger,String sleep, int foodLevel,Double sellable){
-
+  public Animal(String name, int numberOfLegs, int age, String type, int levelOfDanger,String sleep, int foodLevel,Double sellable){
     this.name = name;
     this.numberOfLegs = numberOfLegs;
     this.age = age;
@@ -48,7 +47,7 @@ public abstract class Animal{
     return this.foodLevel;
   }
 
-  public double sellable(){
+  public Double sellable(){
     return this.sellable;
   }
 }

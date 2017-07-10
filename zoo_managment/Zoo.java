@@ -1,26 +1,25 @@
-package fantasy_zoo;
+package zoo_managment;
 import behaviours.*;
 import java.util.ArrayList;
 
-public class FantasyZoo {
+public class Zoo {
 
   String name;
-  ArrayList<Animal> animal;
-  ArrayList<Enclosure> enclosure;
+  ArrayList<Animal> animals;
+  ArrayList<Enclosure> enclosures;
 
-public FantasyZoo(String name){
-  this.name = name;
-  this.animal = new ArrayList<Animal>();
-  this.enclosure = new ArrayList<Enclosure>();
-}
-
-public String getName(){
-  return this.name;
+  public Zoo(String name){
+    this.name = name;
+    this.animals = new ArrayList<Animal>();
+    this.enclosures = new ArrayList<Enclosure>();
   }
-public String addEnclosure(){
-  this.enclosure.add(enclosure)
-}
 
+  public String getName(){
+    return this.name;
+  }
 
+  public void addEnclosure(Enclosure enclosure){
+    this.enclosures.add(enclosure);
+  }
 }
 

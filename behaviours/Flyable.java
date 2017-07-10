@@ -1,5 +1,5 @@
 package behaviours;
 
-public interface flyable {
+public interface Flyable {
   String flyable();
 }
