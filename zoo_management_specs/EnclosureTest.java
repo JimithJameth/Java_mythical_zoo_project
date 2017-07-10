@@ -10,11 +10,16 @@ public class EnclosureTest {
   @Before
 
   public void before(){
-    enclosure = new Enclosure(TerrainType.BRIMSTONELAND);
+    enclosure = new Enclosure(TerrainType.BRIMSTONELAND,"BRIMSTONELAND");
   }
 
   @Test
   public void canGetTerrainType(){
     assertEquals(TerrainType.BRIMSTONELAND, enclosure.getTerrain());
+  }
+
+  @Test
+  public void canGetName(){
+    assertEquals("BRIMSTONELAND", enclosure.getName());
   }
 }

@@ -9,9 +9,10 @@ public class Enclosure {
   private ArrayList<Animal> animals;
   private TerrainType terrainType;
 
-  public Enclosure(TerrainType terrain){
+  public Enclosure(TerrainType terrain, String name){
     this.terrainType = terrain;
     this.animals = new ArrayList<Animal>();
+    this.name = name;
   }
 
   public TerrainType getTerrain(){
