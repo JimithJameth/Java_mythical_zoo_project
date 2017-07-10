@@ -24,7 +24,7 @@ public abstract class Animal{
   }
 
   public String getName(){
-    return this. name;
+    return this.name;
   }
 
   public int getNumberOfLegs(){
