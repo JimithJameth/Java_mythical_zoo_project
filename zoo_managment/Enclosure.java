@@ -31,7 +31,7 @@ public class Enclosure {
     this.animals.remove(beast);
   }
 
-  public int collectionCount(){
+  public int animalsCount(){
     return animals.size();
   }
 }
