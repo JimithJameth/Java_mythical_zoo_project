@@ -31,4 +31,11 @@ public class EnclosureTest {
     assertEquals(1, enclosure.animalsCount());
 
   }
+
+  @Test
+  public void canRemoveAnimal(){
+    enclosure.addAnimal(dragon);
+    enclosure.removeAnimal(dragon);
+    assertEquals(0, enclosure.animalsCount());
+  }
 }
