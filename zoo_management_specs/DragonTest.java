@@ -16,7 +16,33 @@ public class DragonTest {
   }
 
   @Test
-   public void hasName(){
+  public void hasName(){
    assertEquals("Draco", dragon.getName());
-   }
  }
+
+ @Test 
+ public void canBreatheFire(){
+   assertEquals("The Dragon leans back and breathes a blaze of fire",dragon.breathesFire());
+ }
+
+ @Test
+ public void canFly(){
+  assertEquals("The Dragon flaps its wings and begins to rise from the land bellow",dragon.flyable());
+ }
+
+ @Test
+ public void hasType(){
+  assertEquals("Green Rathian",dragon.getType());
+ }
+
+ @Test
+  public void canBeSold(){
+    assertEquals(250.00,dragon.sellable(),.01);
+  }
+
+  @Test
+   public void feedAnimal(){
+    dragon.feedAnimal();
+    assertEquals(8,dragon.getFoodLevel());
+   }
+}

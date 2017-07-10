@@ -5,9 +5,9 @@ public class Dragon extends Animal implements Flyable {
 
   String breathesfire;
 
-  public Dragon (String name, int numberoflegs, int age, String type, int levelofdanger,String sleep, int foodlevel,String breathesfire,Double sellable){
-    
-    super(name,numberoflegs,age,type,levelofdanger,sleep,foodlevel,sellable);
+  public Dragon (String name, int numberoflegs, int age, String type, int levelofdanger,String sleep, int foodLevel,String breathesfire,Double sellable){
+
+    super(name,numberoflegs,age,type,levelofdanger,sleep,foodLevel,sellable);
     this.breathesfire = breathesfire;
   }
 
@@ -17,5 +17,9 @@ public class Dragon extends Animal implements Flyable {
 
   public String flyable(){
     return "The Dragon flaps its wings and begins to rise from the land bellow";
+  }
+
+  public void feedAnimal(){
+    this.foodLevel += 1;
   }
 }
