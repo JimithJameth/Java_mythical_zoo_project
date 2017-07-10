@@ -16,6 +16,7 @@ abstract class Enclosure {
 
   private Land(TerrainType,terrain){
     this.terrain = terrain;
+    this.collection = new ArrayList<Animal>();
   }
 
   private TerrainType getTerrain(){
@@ -23,8 +24,19 @@ abstract class Enclosure {
 
     }
 
-  private getName(){
+  private String getName(){
     return this.name;
   }
 
+  private void addAnimal(Animal beast){
+    this.collection.add(beast);
   }
+
+  private void removeAnimal(Animal beast){
+    this.collecton.remove(beast)
+  }
+
+  private int collectionCount(){
+    return collection.size();
+  }
+}

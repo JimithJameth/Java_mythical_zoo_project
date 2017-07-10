@@ -9,9 +9,10 @@ public abstract class Animal{
   int levelOfDanger;
   String sleep;
   int foodLevel;
+  Double sellable;
 
 
-  public Animals (String name, int numberOfLegs, int age, String type, int levelOfDanger,String sleep, int foodLevel){
+  public Animals (String name, int numberOfLegs, int age, String type, int levelOfDanger,String sleep, int foodLevel,Double sellable){
 
     this.name = name;
     this.numberOfLegs = numberOfLegs;
@@ -20,6 +21,7 @@ public abstract class Animal{
     this.levelOfDanger = levelOfDanger;
     this.foodLevel = foodLevel;
     this.sleep = sleep;
+    this.sellable = sellable;
   }
 
   public String getName(){
@@ -44,5 +46,9 @@ public abstract class Animal{
 
   public int getFoodLevel(){
     return this.foodLevel;
+  }
+
+  public double sellable(){
+    return this.sellable;
   }
 }
