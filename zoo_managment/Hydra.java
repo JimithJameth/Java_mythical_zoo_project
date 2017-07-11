@@ -1,3 +1,6 @@
+package zoo_managment;
+import behaviours.*;
+
 public class Hydra extends Animal implements Swimmable {
 
   String hugescream;
@@ -14,6 +17,10 @@ public class Hydra extends Animal implements Swimmable {
   }
 
   public String aquaticblast(){
-    return"The Hydra releases focused torrents of water from the 5 heads"
+    return"The Hydra releases focused torrents of water from the 5 heads";
+  }
+
+  public String swimmable(){
+    return "The hydra thunders through the depths bellow diving into the unknown";
   }
 }
