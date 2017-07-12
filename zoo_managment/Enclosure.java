@@ -6,7 +6,7 @@ import java.util.ArrayList;
 public class Enclosure {
 
   private String name;
-  private ArrayList<Animal> animals;
+  protected ArrayList<Animal> animals;
   private TerrainType terrainType;
 
   public Enclosure(TerrainType terrain, String name){

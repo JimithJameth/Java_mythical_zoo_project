@@ -10,9 +10,9 @@ public abstract class Animal{
   String sleep;
   int foodLevel;
   Double sellable;
+  String category;
 
-
-  public Animal(String name, int numberOfLegs, int age, String type, int levelOfDanger,String sleep, int foodLevel,Double sellable){
+  public Animal(String name, int numberOfLegs, int age, String type, int levelOfDanger,String sleep, int foodLevel,Double sellable, String category){
     this.name = name;
     this.numberOfLegs = numberOfLegs;
     this.age = age;
@@ -21,6 +21,11 @@ public abstract class Animal{
     this.foodLevel = foodLevel;
     this.sleep = sleep;
     this.sellable = sellable;
+    this.category = category;
+  }
+
+  public String getCategory() {
+    return this.category;
   }
 
   public String getName(){

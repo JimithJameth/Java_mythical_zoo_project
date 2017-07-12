@@ -11,8 +11,8 @@ public class HydraTest {
   @Before
 
   public void before(){
-    enclosure = new Enclosure(TerrainType.AQUATICLAND,"AQUATICLAND");
-    hydra = new Hydra("Nezsha",0,200,"Dark Blue,Seaserpent",7,"blubblubbllub",4,"SCHRREEEEEAAAAAAAAEEE","The Hydra releases focused torrents of water from the 5 heads",360.00);
+    enclosure = new Enclosure(TerrainType.AQUATIC,"AQUATIC");
+    hydra = new Hydra("Nezsha",0,200,"Dark Blue,Seaserpent",7,"blubblubbllub",4,"SCHRREEEEEAAAAAAAAEEE","The Hydra releases focused torrents of water from the 5 heads",360.00, "Water");
   }
 
   @Test

@@ -11,7 +11,7 @@ public class ZooTest {
   @Before
 
   public void before(){
-  enclosure = new Enclosure(TerrainType.BRIMSTONELAND,"BRIMSTONELAND");
+  enclosure = new Enclosure(TerrainType.BRIMSTONE,"BRIMSTONE");
   zoo = new Zoo ("Crimson horizon" );
 }
 
