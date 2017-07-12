@@ -35,4 +35,10 @@ public class CyclopsTest {
    public void canBeSold(){
      assertEquals(400.00,cyclops.sellable(),.01);
    }
+
+   @Test
+     public void foodLevelIncrease(){
+     cyclops.feedAnimal();
+     assertEquals(6,cyclops.getFoodLevel());
+     }
 }
