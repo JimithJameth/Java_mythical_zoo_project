@@ -24,7 +24,7 @@ public class WindstormTest {
 
   @Test
   public void canNotAddNonFlyingAnimal(){
-    Hydra hydra = new Hydra("Nezsha",0,200,"Dark Blue,Seaserpent",7,"blubblubbllub",4,"SCHRREEEEEAAAAAAAAEEE","The Hydra releases focused torrents of water from the 5 heads",360.00, "Land");
+    Hydra hydra = new Hydra("Nezsha",0,200,"Dark Blue,Seaserpent",7,"blubblubbllub",4,"SCHRREEEEEAAAAAAAAEEE","The Hydra releases focused torrents of water from the 5 heads",360.00, "Water");
     windstorm.addAnimal(hydra);
     assertEquals(0, windstorm.animalsCount());
   }

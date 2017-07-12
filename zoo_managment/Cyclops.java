@@ -17,6 +17,6 @@ public class Cyclops extends Animal  {
 
   public String feedAnimal(){
     this.foodLevel += 1;
-    return "The dragon feeds and gains a food level!";
+    return "The Cyclops feeds and gains a food level!";
   }
 }
