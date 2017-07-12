@@ -20,8 +20,18 @@ public class HydraTest {
     assertEquals("Nezsha", hydra.getName());
   }
 
-  @Test void hasType(){
+  @Test 
+  public void hasType(){
     assertEquals("Dark Blue,Seaserpent",hydra.getType());
   }
 
+  @Test 
+  public void canScream(){
+    assertEquals("SCHRREEEEEAAAAAAAAEEE" ,hydra.hugeScream());
+  }
+
+  @Test
+  public void canbeSold(){
+    assertEquals(360.00 ,hydra.sellable(),.01);
+  }
 }

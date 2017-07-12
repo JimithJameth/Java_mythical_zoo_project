@@ -12,11 +12,11 @@ public class Hydra extends Animal implements Swimmable {
     this.hugescream = hugescream;
   }
 
-  public String hugescream(){
+  public String hugeScream(){
     return "SCHRREEEEEAAAAAAAAEEE";
   }
 
-  public String aquaticblast(){
+  public String aquaticBlast(){
     return"The Hydra releases focused torrents of water from the 5 heads";
   }
 
