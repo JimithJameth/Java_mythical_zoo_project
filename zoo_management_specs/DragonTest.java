@@ -28,26 +28,26 @@ public class DragonTest {
  @Test
  public void canFly(){
   assertEquals("The Dragon flaps its wings and begins to rise from the land bellow",dragon.flyable());
- }
+}
 
- @Test
- public void hasType(){
+@Test
+public void hasType(){
   assertEquals("Green Rathian",dragon.getType());
- }
+}
 
- @Test
-  public void canBeSold(){
-    assertEquals(250.00,dragon.sellable(),.01);
-  }
+@Test
+public void canBeSold(){
+  assertEquals(250.00,dragon.sellable(),.01);
+}
 
-  @Test
-   public void feedAnimal(){
-    assertEquals("The dragon feeds and gains a food level!",dragon.feedAnimal());
-   }
+@Test
+public void feedAnimal(){
+  assertEquals("The dragon feeds and gains a food level!",dragon.feedAnimal());
+}
 
-  @Test
-    public void foodLevelIncrease(){
-    dragon.feedAnimal();
-    assertEquals(8,dragon.getFoodLevel());
-    }
+@Test
+public void foodLevelIncrease(){
+  dragon.feedAnimal();
+  assertEquals(8,dragon.getFoodLevel());
+}
 }
